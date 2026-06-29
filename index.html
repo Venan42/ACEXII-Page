@@ -1,209 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum - Game Dev</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
-</head>
-<body>
- 
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ACEX I e II</title>
+
+      <link rel="icon" type="image/png" href="assets/img/ifba-icon.jpg">
+
+      <link rel="stylesheet" href="assets/css/style.css" />
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+        defer
+      ></script>
+
+      <script src="scripts/script.js" defer></script>
+    </head>
+  </head>
+  <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
     <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu">
-        <div class="main-content menu-content">
-            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">Lorem</a></h1>
-            <nav>
-                <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="#intro">Lorem</a></li>
-                    <li><a href="#grid-one">Ipsum</a></li>
-                    <li><a href="#gallery">Dolor</a></li>
-                    <li><a href="#pricing">Sit</a></li>
-                    <li><a href="#contact">Amet</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false">
+          <a href="#home">ACEX I e II</a>
+        </h1>
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#acex1-pdfs">ACEX I</a></li>
+            <li><a href="#acex1-fotos">Fotos I</a></li>
+            <li><a href="#acex2">ACEX II</a></li>
+          </ul>
+        </nav>
+      </div>
     </aside>
 
+    <!-- SEÇÃO 1 — INTRODUÇÃO GERAL -->
     <section id="home" class="intro section main-bg">
-        <div class="main-content intro-content">
-            <div class="intro-text-content">
-                <h2>Lorem Ipsum Dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum, nisl vitae aliquet pretium, nunc ligula tristique massa, non elementum sapien purus vel turpis. Ut feugiat nunc ac elit tempor, quis varius nisl dictum. Vestibulum ac ante sed nisl tristique accumsan, ac porttitor lorem scelerisque.</p>
-            </div>
-            <div class="intro-img">
-                <img class="pixel-art-placeholder" src="./assets/img/fundo.png" alt="Lorem Ipsum">
-            </div>
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>ACEX I e II</h2>
+          <p>
+            Parágrafo 1 — descreva aqui o contexto geral do projeto, o que é a
+            ACEX, qual o objetivo da atividade e o público atendido. Substitua
+            este texto pelo conteúdo real.
+          </p>
+          <p>
+            Parágrafo 2 — complemente com informações sobre as duas edições,
+            datas, local de realização ou qualquer outro detalhe relevante.
+            Substitua este texto pelo conteúdo real.
+          </p>
         </div>
+        <div class="intro-img">
+          <!-- Troque pelo caminho da sua imagem/foto de capa -->
+          <img
+            class="pixel-art-placeholder"
+            src="./assets/img/fundo.png"
+            alt="ACEX"
+          />
+        </div>
+      </div>
     </section>
 
-    <section id="intro" class="top3 section sec-bg">
-        <div class="main-content top3-content">
-            <h2>Lorem Ipsum</h2>
+    <!-- SEÇÃO 2 — MATERIAIS DA ACEX I (PDFs) -->
+    <section id="acex1-pdfs" class="grid-one section sec-bg">
+      <div class="main-content grid-one-content">
+        <h2 class="gird-main-heading">ACEX I — Materiais</h2>
+        <p class="grid-description">
+          Documentos e materiais produzidos durante a ACEX I
+        </p>
+        <div class="grid grid-stack">
+          <!-- PDF 1 -->
+          <article class="game-card">
+            <h3>Slides de Apresentação do Projeto da ACEX I</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac convallis nisl. Phasellus elementum massa sed sapien tristique, quis elementum erat pretium. Morbi non aliquet mi. Curabitur sed leo imperdiet, elementum turpis vel, efficitur sapien.
+              Slides de apresentação do projeto desenvolvido para o curso
+              introdutório de desenvolvimento de jogos com Python e PyGame. O
+              material apresenta a proposta do projeto, as tecnologias
+              utilizadas e as etapas de construção de um jogo 2D, abordando
+              desde o planejamento e implementação das mecânicas até o
+              refinamento visual e o resultado final. A apresentação demonstra,
+              de forma resumida, a evolução do desenvolvimento do jogo e os
+              principais conceitos trabalhados durante o projeto.
             </p>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-Slides-2025.2.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
+
+          <!-- PDF 2 -->
+          <article class="game-card">
+            <h3>Documentação Técnica do Projeto da ACEX I</h3>
             <p>
-                Nullam vehicula magna id dolor pulvinar, non convallis sem facilisis. Phasellus vitae pretium sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              Documentação técnica do projeto de desenvolvimento progressivo de
+              um jogo de plataforma 2D utilizando Python e PyGame. O documento
+              apresenta os objetivos, a fundamentação teórica, a metodologia
+              adotada e a implementação do jogo em seis fases evolutivas,
+              abordando conceitos como física, colisões, câmera, animações,
+              inteligência artificial, level design e organização de código.
+              Além disso, inclui análises técnicas, boas práticas de
+              desenvolvimento, possibilidades de expansão, conclusões e
+              referências, servindo como material de apoio para o estudo e
+              compreensão do processo de desenvolvimento de jogos 2D.
             </p>
-        </div>
-    </section>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-Documentacao-codigo.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
 
-    <section id="grid-one" class="grid-one section main-bg">
-        <div class="main-content grid-one-content">
-            <h2 class="gird-main-heading">Lorem Ipsum</h2>
-            <p class="grid-description">Lorem ipsum dolor sit amet</p>
-            <div class="grid">
-            <article class="game-card">
-                <h3>Lorem 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur erat vel ex maximus, vel varius tortor elementum.</p>
-            </article>
-            <article class="game-card">
-                <h3>Lorem 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur erat vel ex maximus, vel varius tortor elementum.</p>
-            </article>
-            <article class="game-card">
-                <h3>Lorem 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur erat vel ex maximus, vel varius tortor elementum.</p>
-            </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="grid-one section sec-bg">
-        <div class="main-content grid-one-content">
-            <h2 class="gird-main-heading">Lorem Ipsum</h2>
-            <p class="grid-description">Lorem ipsum dolor sit amet</p>
-            <div class="grid">
-            <div class="gallery-img">
-                <div class="sprite-placeholder"></div>
-            </div>
-            <div class="gallery-img">
-                <div class="sprite-placeholder"></div>
-            </div>
-            <div class="gallery-img">
-                <div class="sprite-placeholder"></div>
-            </div>
-            <div class="gallery-img">
-                <div class="sprite-placeholder"></div>
-            </div>
-            <div class="gallery-img">
-                <div class="sprite-placeholder"></div>
-            </div>
-            <div class="gallery-img">
-                <div class="sprite-placeholder"></div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="top3 section main-bg">
-        <div class="main-content top3-content">
-            <h2>Lorem Ipsum</h2>
+          <!-- PDF 3 -->
+          <article class="game-card">
+            <h3>Relatório Final Preliminar da ACEX I</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas ipsum et ex pretium, sit amet elementum dolor imperdiet. Fusce eget dictum leo, id consequat leo. Vestibulum fringilla interdum mi, sed molestie purus imperdiet sed.
+              Relatório Final Preliminar elaborado para documentar o
+              desenvolvimento da Atividade Curricular de Extensão (ACEX),
+              contemplando o planejamento, a execução e os resultados parciais
+              do projeto. O documento apresenta a contextualização da ação
+              extensionista, os objetivos, a divisão das funções da equipe, o
+              desenvolvimento do jogo Guardião da Mata, a proposta pedagógica
+              das ministrações nas escolas, a arquitetura técnica do software, o
+              design visual, as mecânicas implementadas e os desafios
+              encontrados durante o desenvolvimento. Além disso, reúne
+              informações sobre as tecnologias utilizadas, cronograma de
+              atividades, metas do projeto e perspectivas para a conclusão do
+              trabalho, servindo como registro técnico e acadêmico da evolução
+              da iniciativa.
             </p>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-Relatorio-Final-Preliminar.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
 
-            <div class="responsive-table">
-                <table>
-                    <caption>Lorem Ipsum Table</caption>
-                    <thead>
-                        <tr>
-                            <th>Lorem 1</th>
-                            <th>Lorem 2</th>
-                            <th>Lorem 3</th>
-                            <th>Lorem 4</th>
-                            <th>Lorem 5</th>
-                        </tr>
-                    </thead>
-                
-                    <tbody>
-                        <tr>
-                            <td>Ipsum 1</td>
-                            <td>Ipsum 2</td>
-                            <td>Ipsum 3</td>
-                            <td>Ipsum 4</td>
-                            <td>Ipsum 5</td>
-                        </tr>
-                        <tr>
-                            <td>Ipsum 1</td>
-                            <td>Ipsum 2</td>
-                            <td>Ipsum 3</td>
-                            <td>Ipsum 4</td>
-                            <td>Ipsum 5</td>
-                        </tr>
-                        <tr>
-                            <td>Ipsum 1</td>
-                            <td>Ipsum 2</td>
-                            <td>Ipsum 3</td>
-                            <td>Ipsum 4</td>
-                            <td>Ipsum 5</td>
-                        </tr>
-                        <tr>
-                            <td>Ipsum 1</td>
-                            <td>Ipsum 2</td>
-                            <td>Ipsum 3</td>
-                            <td>Ipsum 4</td>
-                            <td>Ipsum 5</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Lorem</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+          <!-- É possível adicionar mais blocos <article class="game-card"> aqui conforme necessário -->
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="intro section sec-bg">
-        <div class="main-content intro-content">
-            <div class="intro-text-content">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis aliquet feugiat massa, sed lacinia leo accumsan sit amet. In hac habitasse platea dictumst. Combination, integration, lorem ipsum.</p>
-            </div>
-            <div class="intro-img">
-                <div class="pixel-art-placeholder2"></div>
-            </div>
-            <div class="contact-form">
-                <fieldset class="form-grid">
-                    <legend>Lorem Ipsum</legend>
-                    <div class="form-group">
-                        <label for="first-name">Lorem Name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Lorem">
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Lorem Surname</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Ipsum">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Lorem E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Lorem@Ipsum">
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="textarea">Lorem Message</label>
-                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet..."></textarea>
-                    </div>
-                    <div class="form-group full-width">
-                        <button type="submit">Lorem Send</button>
-                    </div>
-                </fieldset>
-            </div>
+    <!-- SEÇÃO 3 — GALERIA DE FOTOS DA ACEX I -->
+    <section id="acex1-fotos" class="grid-one section main-bg">
+      <div class="main-content grid-one-content">
+        <h2 class="gird-main-heading">ACEX I — Fotos</h2>
+        <p class="grid-description">
+          Registro fotográfico das atividades realizadas
+        </p>
+        <div class="grid gallery-grid">
+          <!-- Foto 1 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto1.jpg" alt="Foto 1 — ACEX I" />
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto2.jpg" alt="Foto 2 — ACEX I" />
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto3.jpg" alt="Foto 3 — ACEX I" />
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto4.jpg" alt="Foto 4 — ACEX I" />
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto5.jpg" alt="Foto 5 — ACEX I" />
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto6.jpg" alt="Foto 6 — ACEX I" />
+          </div>
+
+          <!-- Adicione mais blocos <div class="gallery-img"> aqui conforme necessário -->
         </div>
+      </div>
     </section>
+
+    <!-- SEÇÃO 4 — ACEX II -->
+    <section id="acex2" class="intro section sec-bg">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>ACEX II</h2>
+          <p>
+            Descrição da ACEX II: contexto, objetivos e o que foi diferente ou
+            complementar em relação à primeira edição. Substitua este texto pelo
+            conteúdo real.
+          </p>
+          <p>
+            Segundo parágrafo opcional com mais detalhes sobre a ACEX II.
+            Substitua este texto pelo conteúdo real.
+          </p>
+        </div>
+        <div class="intro-img">
+          <!-- Troque pela imagem/foto da ACEX II -->
+          <div class="pixel-art-placeholder2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4B — PDFs DA ACEX II -->
 
     <footer id="footer" class="footer">
-        <p><a rel="nofollow" href="">Lorem <span class="heart">♥</span> Ipsum</a></p>
+      <p>
+        <a rel="nofollow" href="#home"
+          >ACEX <span class="heart">♥</span> Projeto</a
+        >
+      </p>
     </footer>
 
     <a class="back-to-top" href="#">▲</a>
-</body>
+  </body>
 </html>
