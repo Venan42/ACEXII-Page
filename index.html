@@ -1,240 +1,289 @@
 <!doctype html>
 <html lang="pt-BR">
-
-<head>
-
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACEX I e II</title>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ACEX I e II</title>
 
-    <link rel="icon" type="image/png" href="assets/img/ifba-icon.jpg">
+      <link rel="icon" type="image/png" href="assets/img/ifba-icon.jpg" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+        defer
+      ></script>
 
-    <script src="scripts/script.js" defer></script>
+      <script src="scripts/script.js" defer></script>
+    </head>
   </head>
-</head>
 
-<body>
-  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button" />
-  <label class="close-menu-label" for="close-menu" title="close-menu"></label>
-  <aside class="menu">
-    <div class="main-content menu-content">
-      <h1 onclick="getElementById('close-menu').checked = false">
-        <a href="#home">Guardião da Mata</a>
-      </h1>
-      <nav>
-        <ul onclick="getElementById('close-menu').checked = false">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#acex1-pdfs">ACEX I</a></li>
-          <li><a href="#acex1-fotos">Fotos I</a></li>
-          <li><a href="#acex2">ACEX II</a></li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
-
-  <!-- SEÇÃO 1 — INTRODUÇÃO GERAL -->
-  <section id="home" class="intro section main-bg">
-    <div class="main-content intro-content">
-      <div class="intro-text-content">
-        <h2>Extensão em Jogos Digitais</h2>
-        <p>
-          Este site reúne os materiais produzidos durante as disciplinas de
-          ACEX I e ACEX II, atividades curriculares de extensão do curso de
-          Bacharelado em Sistemas de Informação do IFBA, campus Vitória da
-          Conquista. Ao longo dos dois componentes, uma equipe de estudantes
-          organizada em funções específicas — como desenvolvimento,
-          jogabilidade, arte, storytelling e ministração — trabalhou de forma
-          colaborativa para planejar, produzir e aplicar um projeto prático de
-          desenvolvimento de jogos em Python.
-        </p>
-        <p>
-          Mais do que um exercício técnico, o projeto teve como propósito
-          levar conhecimento tecnológico para além dos muros da instituição,
-          aproximando teoria e prática por meio de encontros semanais,
-          produção de material didático e ministração de aulas em escolas
-          públicas de ensino médio. Aqui você encontrará toda a documentação,
-          os slides, os registros fotográficos e os relatórios que contam essa
-          jornada.
-        </p>
+  <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <aside class="menu">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false">
+          <a href="#home">Guardião da Mata</a>
+        </h1>
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#acex1-pdfs">ACEX I</a></li>
+            <li><a href="#acex1-fotos">Fotos I</a></li>
+            <li><a href="#acex2">ACEX II</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="intro-img">
-        <img class="pixel-art-placeholder" src="./assets/img/introducao.png" alt="ACEX" />
-      </div>
+    </aside>
 
-      <div class="intro-text-content">
-        <p>
-          No centro do projeto está o Guardião da Mata, um jogo de plataforma
-          2D inspirado no folclore brasileiro, desenvolvido com Python e
-          Pygame. O jogador controla o Curupira, guardião mítico das
-          florestas, em uma jornada que combina mecânicas clássicas do gênero
-          com uma narrativa voltada à conscientização ambiental e à
-          valorização da cultura nacional — servindo como eixo prático para o
-          ensino de lógica de programação e desenvolvimento de jogos nas
-          escolas participantes.
+    <!-- SEÇÃO 1 — INTRODUÇÃO GERAL -->
+    <section id="home" class="intro section main-bg">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>Extensão em Jogos Digitais</h2>
+          <p>
+            Este site reúne os materiais produzidos durante as disciplinas de
+            ACEX I e ACEX II, atividades curriculares de extensão do curso de
+            Bacharelado em Sistemas de Informação do IFBA, campus Vitória da
+            Conquista. Ao longo dos dois componentes, uma equipe de estudantes
+            organizada em funções específicas — como desenvolvimento,
+            jogabilidade, arte, storytelling e ministração — trabalhou de forma
+            colaborativa para planejar, produzir e aplicar um projeto prático de
+            desenvolvimento de jogos em Python.
+          </p>
+          <p>
+            Mais do que um exercício técnico, o projeto teve como propósito
+            levar conhecimento tecnológico para além dos muros da instituição,
+            aproximando teoria e prática por meio de encontros semanais,
+            produção de material didático e ministração de aulas em escolas
+            públicas de ensino médio. Aqui você encontrará toda a documentação,
+            os slides, os registros fotográficos e os relatórios que contam essa
+            jornada.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            class="pixel-art-placeholder"
+            src="./assets/img/introducao.png"
+            alt="ACEX"
+          />
+        </div>
+
+        <div class="intro-text-content">
+          <p>
+            No centro do projeto está o Guardião da Mata, um jogo de plataforma
+            2D inspirado no folclore brasileiro, desenvolvido com Python e
+            Pygame. O jogador controla o Curupira, guardião mítico das
+            florestas, em uma jornada que combina mecânicas clássicas do gênero
+            com uma narrativa voltada à conscientização ambiental e à
+            valorização da cultura nacional — servindo como eixo prático para o
+            ensino de lógica de programação e desenvolvimento de jogos nas
+            escolas participantes.
+          </p>
+          <p>
+            Nas próximas seções deste site, você poderá acessar os slides de
+            apresentação do projeto, a documentação técnica completa do código,
+            o relatório final da ACEX I, além de uma galeria com fotos das
+            atividades realizadas. Em breve, os materiais referentes à ACEX II
+            também estarão disponíveis aqui.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            class="pixel-art-placeholder"
+            src="./assets/img/multimeios.png"
+            alt="ACEX"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2 — MATERIAIS DA ACEX I (PDFs) -->
+    <section id="acex1-pdfs" class="grid-one section sec-bg">
+      <div class="main-content grid-one-content">
+        <h2 class="gird-main-heading">ACEX I — Materiais</h2>
+        <p class="grid-description">
+          Documentos e materiais produzidos durante a ACEX I
         </p>
-        <p>
-          Nas próximas seções deste site, você poderá acessar os slides de
-          apresentação do projeto, a documentação técnica completa do código,
-          o relatório final da ACEX I, além de uma galeria com fotos das
-          atividades realizadas. Em breve, os materiais referentes à ACEX II
-          também estarão disponíveis aqui.
+        <div class="grid grid-stack">
+          <!-- PDF 1 -->
+          <article class="game-card">
+            <h3>Slides de Apresentação do Projeto da ACEX I</h3>
+            <p>
+              Slides de apresentação do projeto desenvolvido para o curso
+              introdutório de desenvolvimento de jogos com Python e PyGame. O
+              material apresenta a proposta do projeto, as tecnologias
+              utilizadas e as etapas de construção de um jogo 2D, abordando
+              desde o planejamento e implementação das mecânicas até o
+              refinamento visual e o resultado final. A apresentação demonstra,
+              de forma resumida, a evolução do desenvolvimento do jogo e os
+              principais conceitos trabalhados durante o projeto.
+            </p>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-Slides-2025.2.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
+
+          <!-- PDF 2 -->
+          <article class="game-card">
+            <h3>Documentação Técnica do Projeto da ACEX I</h3>
+            <p>
+              Documentação técnica do projeto de desenvolvimento progressivo de
+              um jogo de plataforma 2D utilizando Python e PyGame. O documento
+              apresenta os objetivos, a fundamentação teórica, a metodologia
+              adotada e a implementação do jogo em seis fases evolutivas,
+              abordando conceitos como física, colisões, câmera, animações,
+              inteligência artificial, level design e organização de código.
+              Além disso, inclui análises técnicas, boas práticas de
+              desenvolvimento, possibilidades de expansão, conclusões e
+              referências, servindo como material de apoio para o estudo e
+              compreensão do processo de desenvolvimento de jogos 2D.
+            </p>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-Documentacao-codigo.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
+
+          <!-- PDF 3 -->
+          <article class="game-card">
+            <h3>Relatório Final Preliminar da ACEX I</h3>
+            <p>
+              Relatório Final Preliminar elaborado para documentar o
+              desenvolvimento da Atividade Curricular de Extensão (ACEX),
+              contemplando o planejamento, a execução e os resultados parciais
+              do projeto. O documento apresenta a contextualização da ação
+              extensionista, os objetivos, a divisão das funções da equipe, o
+              desenvolvimento do jogo Guardião da Mata, a proposta pedagógica
+              das ministrações nas escolas, a arquitetura técnica do software, o
+              design visual, as mecânicas implementadas e os desafios
+              encontrados durante o desenvolvimento. Além disso, reúne
+              informações sobre as tecnologias utilizadas, cronograma de
+              atividades, metas do projeto e perspectivas para a conclusão do
+              trabalho, servindo como registro técnico e acadêmico da evolução
+              da iniciativa.
+            </p>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-Relatorio-Final-Preliminar.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
+          <article class="game-card">
+            <h3>Documento de Conceito e Design desenvolvido na ACEX I</h3>
+            <p>
+              Documento de Conceito e Design do Jogo (GCD/GDD) elaborado para
+              definir a proposta e o planejamento do jogo Guardião da Mata. O
+              documento apresenta o conceito geral do projeto, objetivos,
+              justificativa, narrativa, mecânicas de jogo, ambientação,
+              personagens, diretrizes de design, aspectos técnicos, arquitetura
+              da jogabilidade, fluxogramas, mockups das fases e especificações
+              visuais, servindo como referência para orientar o desenvolvimento
+              do jogo e garantir a padronização das decisões de design e
+              implementação.
+            </p>
+            <a
+              class="pdf-link"
+              href="assets/pdfs/acex-I/Acex-I-DOCUMENTO-CONCEITO-E-DESIGN-FASE-1.pdf"
+              target="_blank"
+              >▶ Abrir PDF</a
+            >
+          </article>
+
+          <!-- É possível adicionar mais blocos <article class="game-card"> aqui conforme necessário -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3 — GALERIA DE FOTOS DA ACEX I -->
+    <section id="acex1-fotos" class="grid-one section main-bg">
+      <div class="main-content grid-one-content">
+        <h2 class="gird-main-heading">ACEX I — Fotos</h2>
+        <p class="grid-description">
+          Registro fotográfico das atividades realizadas
         </p>
-      </div>
-      <div class="intro-img">
-        <img class="pixel-art-placeholder" src="./assets/img/multimeios.png" alt="ACEX" />
-      </div>
+        <div class="grid gallery-grid">
+          <!-- Foto 1 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex-I/acex-I-imagem-1.png" alt="Foto 1 — ACEX I" />
+          </div>
 
-    </div>
-  </section>
+          <!-- Foto 2 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex-I/acex-I-imagem-2.png" alt="Foto 2 — ACEX I" />
+          </div>
 
-  <!-- SEÇÃO 2 — MATERIAIS DA ACEX I (PDFs) -->
-  <section id="acex1-pdfs" class="grid-one section sec-bg">
-    <div class="main-content grid-one-content">
-      <h2 class="gird-main-heading">ACEX I — Materiais</h2>
-      <p class="grid-description">
-        Documentos e materiais produzidos durante a ACEX I
+          <!-- Foto 3 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex-I/acex-I-imagem-3.png" alt="Foto 3 — ACEX I" />
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto4.jpg" alt="Foto 4 — ACEX I" />
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto5.jpg" alt="Foto 5 — ACEX I" />
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="gallery-img">
+            <img src="assets/img/acex1-foto6.jpg" alt="Foto 6 — ACEX I" />
+          </div>
+
+          <!-- Adicione mais blocos <div class="gallery-img"> aqui conforme necessário -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4 — ACEX II -->
+    <section id="acex2" class="intro section sec-bg">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>ACEX II</h2>
+          <p>
+            Descrição da ACEX II: contexto, objetivos e o que foi diferente ou
+            complementar em relação à primeira edição. Substitua este texto pelo
+            conteúdo real.
+          </p>
+          <p>
+            Segundo parágrafo opcional com mais detalhes sobre a ACEX II.
+            Substitua este texto pelo conteúdo real.
+          </p>
+        </div>
+        <div class="intro-img">
+          <!-- Troque pela imagem/foto da ACEX II -->
+          <div class="pixel-art-placeholder2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4B — PDFs DA ACEX II -->
+
+    <footer id="footer" class="footer">
+      <p>
+        <a rel="nofollow" href="#home"
+          >Desenvolvido com <span class="heart">♥</span> em IFBA - BSI</a
+        >
       </p>
-      <div class="grid grid-stack">
-        <!-- PDF 1 -->
-        <article class="game-card">
-          <h3>Slides de Apresentação do Projeto da ACEX I</h3>
-          <p>
-            Slides de apresentação do projeto desenvolvido para o curso
-            introdutório de desenvolvimento de jogos com Python e PyGame. O
-            material apresenta a proposta do projeto, as tecnologias
-            utilizadas e as etapas de construção de um jogo 2D, abordando
-            desde o planejamento e implementação das mecânicas até o
-            refinamento visual e o resultado final. A apresentação demonstra,
-            de forma resumida, a evolução do desenvolvimento do jogo e os
-            principais conceitos trabalhados durante o projeto.
-          </p>
-          <a class="pdf-link" href="assets/pdfs/acex-I/Acex-I-Slides-2025.2.pdf" target="_blank">▶ Abrir PDF</a>
-        </article>
+    </footer>
 
-        <!-- PDF 2 -->
-        <article class="game-card">
-          <h3>Documentação Técnica do Projeto da ACEX I</h3>
-          <p>
-            Documentação técnica do projeto de desenvolvimento progressivo de
-            um jogo de plataforma 2D utilizando Python e PyGame. O documento
-            apresenta os objetivos, a fundamentação teórica, a metodologia
-            adotada e a implementação do jogo em seis fases evolutivas,
-            abordando conceitos como física, colisões, câmera, animações,
-            inteligência artificial, level design e organização de código.
-            Além disso, inclui análises técnicas, boas práticas de
-            desenvolvimento, possibilidades de expansão, conclusões e
-            referências, servindo como material de apoio para o estudo e
-            compreensão do processo de desenvolvimento de jogos 2D.
-          </p>
-          <a class="pdf-link" href="assets/pdfs/acex-I/Acex-I-Documentacao-codigo.pdf" target="_blank">▶ Abrir PDF</a>
-        </article>
-
-        <!-- PDF 3 -->
-        <article class="game-card">
-          <h3>Relatório Final Preliminar da ACEX I</h3>
-          <p>
-            Relatório Final Preliminar elaborado para documentar o
-            desenvolvimento da Atividade Curricular de Extensão (ACEX),
-            contemplando o planejamento, a execução e os resultados parciais
-            do projeto. O documento apresenta a contextualização da ação
-            extensionista, os objetivos, a divisão das funções da equipe, o
-            desenvolvimento do jogo Guardião da Mata, a proposta pedagógica
-            das ministrações nas escolas, a arquitetura técnica do software, o
-            design visual, as mecânicas implementadas e os desafios
-            encontrados durante o desenvolvimento. Além disso, reúne
-            informações sobre as tecnologias utilizadas, cronograma de
-            atividades, metas do projeto e perspectivas para a conclusão do
-            trabalho, servindo como registro técnico e acadêmico da evolução
-            da iniciativa.
-          </p>
-          <a class="pdf-link" href="assets/pdfs/acex-I/Acex-I-Relatorio-Final-Preliminar.pdf" target="_blank">▶ Abrir
-            PDF</a>
-        </article>
-
-        <!-- É possível adicionar mais blocos <article class="game-card"> aqui conforme necessário -->
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO 3 — GALERIA DE FOTOS DA ACEX I -->
-  <section id="acex1-fotos" class="grid-one section main-bg">
-    <div class="main-content grid-one-content">
-      <h2 class="gird-main-heading">ACEX I — Fotos</h2>
-      <p class="grid-description">
-        Registro fotográfico das atividades realizadas
-      </p>
-      <div class="grid gallery-grid">
-        <!-- Foto 1 -->
-        <div class="gallery-img">
-          <img src="assets/img/acex1-foto1.jpg" alt="Foto 1 — ACEX I" />
-        </div>
-
-        <!-- Foto 2 -->
-        <div class="gallery-img">
-          <img src="assets/img/acex1-foto2.jpg" alt="Foto 2 — ACEX I" />
-        </div>
-
-        <!-- Foto 3 -->
-        <div class="gallery-img">
-          <img src="assets/img/acex1-foto3.jpg" alt="Foto 3 — ACEX I" />
-        </div>
-
-        <!-- Foto 4 -->
-        <div class="gallery-img">
-          <img src="assets/img/acex1-foto4.jpg" alt="Foto 4 — ACEX I" />
-        </div>
-
-        <!-- Foto 5 -->
-        <div class="gallery-img">
-          <img src="assets/img/acex1-foto5.jpg" alt="Foto 5 — ACEX I" />
-        </div>
-
-        <!-- Foto 6 -->
-        <div class="gallery-img">
-          <img src="assets/img/acex1-foto6.jpg" alt="Foto 6 — ACEX I" />
-        </div>
-
-        <!-- Adicione mais blocos <div class="gallery-img"> aqui conforme necessário -->
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO 4 — ACEX II -->
-  <section id="acex2" class="intro section sec-bg">
-    <div class="main-content intro-content">
-      <div class="intro-text-content">
-        <h2>ACEX II</h2>
-        <p>
-          Descrição da ACEX II: contexto, objetivos e o que foi diferente ou
-          complementar em relação à primeira edição. Substitua este texto pelo
-          conteúdo real.
-        </p>
-        <p>
-          Segundo parágrafo opcional com mais detalhes sobre a ACEX II.
-          Substitua este texto pelo conteúdo real.
-        </p>
-      </div>
-      <div class="intro-img">
-        <!-- Troque pela imagem/foto da ACEX II -->
-        <div class="pixel-art-placeholder2"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO 4B — PDFs DA ACEX II -->
-
-<footer id="footer" class="footer">
-  <p>
-    <a rel="nofollow" href="#home">Desenvolvido com <span class="heart">♥</span> em IFBA - BSI</a>
-  </p>
-</footer>
-
-  <a class="back-to-top" href="#">▲</a>
-</body>
-
+    <a class="back-to-top" href="#">▲</a>
+  </body>
 </html>
