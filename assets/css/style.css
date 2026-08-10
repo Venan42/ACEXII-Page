@@ -258,7 +258,7 @@ p {
 /* Galeria de Elementos/Sprites */
 .gallery-img {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 16/9;
     border: 4px solid var(--light-color);
     overflow: hidden;
     background: var(--dark-color);
@@ -489,6 +489,17 @@ table caption {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Exibir galeria em duas colunas com imagens mais largas */
+.gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--gap) / 1.5);
+}
+
+.gallery-grid .gallery-img {
+    /* reforça o aspecto widescreen para dispositivos maiores */
+    aspect-ratio: 16/9;
 }
 
 
