@@ -34,11 +34,32 @@
           <a href="#home">Guardião da Mata</a>
         </h1>
         <nav>
-          <ul onclick="getElementById('close-menu').checked = false">
+          <ul
+            class="menu-list"
+            onclick="getElementById('close-menu').checked = false"
+          >
             <li><a href="#home">Início</a></li>
-            <li><a href="#acex1-pdfs">ACEX I</a></li>
-            <li><a href="#acex1-fotos">Fotos I</a></li>
+            <li class="menu-section">
+              <details>
+                <summary>ACEX I</summary>
+                <ul class="submenu">
+                  <li><a href="#acex1-pdfs">Documentos</a></li>
+                  <li><a href="#acex1-fotos">Fotos</a></li>
+                </ul>
+              </details>
+            </li>
             <li><a href="#acex2">ACEX II</a></li>
+            <li class="menu-section">
+              <details>
+                <summary>ACEX III</summary>
+                <ul class="submenu">
+                  <li><a href="#acex3-documentos">Documentos</a></li>
+                  <li><a href="#acex3-materiais">Materiais Didáticos</a></li>
+                  <li><a href="#acex3-videos">Videoaula</a></li>
+                  <li><a href="#acex3-fotos">Fotos</a></li>
+                </ul>
+              </details>
+            </li>
           </ul>
         </nav>
       </div>
@@ -109,10 +130,8 @@
     <!-- SEÇÃO 2 — MATERIAIS DA ACEX I (PDFs) -->
     <section id="acex1-pdfs" class="grid-one section sec-bg">
       <div class="main-content grid-one-content">
-        <h2 class="gird-main-heading">ACEX I — Materiais</h2>
-        <p class="grid-description">
-          Documentos e materiais produzidos durante a ACEX I
-        </p>
+        <h2 class="gird-main-heading">ACEX I — Documentos</h2>
+        <p class="grid-description">Documentos produzidos durante a ACEX I</p>
         <div class="grid grid-stack">
           <!-- PDF 1 -->
           <article class="game-card">
@@ -214,7 +233,7 @@
       <div class="main-content grid-one-content">
         <h2 class="gird-main-heading">ACEX I — Fotos</h2>
         <p class="grid-description">
-          Registro fotográfico das atividades realizadas
+          Registro fotográfico das atividades da ACEX I.
         </p>
         <div class="grid gallery-grid">
           <!-- Foto 1 -->
@@ -300,7 +319,155 @@
       </div>
     </section>
 
-    <!-- SEÇÃO 4B — PDFs DA ACEX II -->
+    <!-- SEÇÃO 4B — ACEX III: DOCUMENTOS -->
+    <section id="acex3-documentos" class="grid-one section main-bg">
+      <div class="main-content grid-one-content">
+        <h2>ACEX III — Documentos</h2>
+        <p class="grid-description">
+          Documentos e materiais de referência da ACEX III.
+        </p>
+        <div class="grid grid-stack">
+          <article class="game-card">
+            <h3>Documento 1</h3>
+            <p>
+              Adicione aqui o primeiro documento oficial da ACEX III para
+              publicação na página.
+            </p>
+            <a class="pdf-link" href="#" target="_blank" rel="noopener"
+              >▶ Abrir documento</a
+            >
+          </article>
+          <article class="game-card">
+            <h3>Documento 2</h3>
+            <p>
+              Adicione aqui o segundo documento oficial da ACEX III para
+              organização e consulta.
+            </p>
+            <a class="pdf-link" href="#" target="_blank" rel="noopener"
+              >▶ Abrir documento</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="acex3-materiais" class="grid-one section sec-bg">
+      <div class="main-content grid-one-content">
+        <h2>ACEX III — Materiais Didáticos</h2>
+        <p class="grid-description">
+          Materiais complementares para apoiar as aulas da ACEX III.
+        </p>
+        <div class="grid">
+          <article class="game-card material-card">
+            <a class="video-link" href="#" target="_blank" rel="noopener">
+              <div class="thumbnail-preview material-preview">
+                <span>Material 1</span>
+              </div>
+              <h3>Slides da aula</h3>
+            </a>
+            <p>Adicione aqui o PDF final ou o link de download do material.</p>
+          </article>
+
+          <article class="game-card material-card">
+            <a class="video-link" href="#" target="_blank" rel="noopener">
+              <div class="thumbnail-preview material-preview">
+                <span>Material 2</span>
+              </div>
+              <h3>Guia de apoio</h3>
+            </a>
+            <p>Adicione aqui o material didático complementar da ACEX III.</p>
+          </article>
+
+          <article class="game-card material-card">
+            <a class="video-link" href="#" target="_blank" rel="noopener">
+              <div class="thumbnail-preview material-preview">
+                <span>Material 3</span>
+              </div>
+              <h3>Atividades práticas</h3>
+            </a>
+            <p>Adicione aqui os arquivos das atividades e exercícios.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="acex3-videos" class="grid-one section main-bg">
+      <div class="main-content grid-one-content">
+        <h2>ACEX III — Aulas em vídeo</h2>
+        <p class="grid-description">
+          Vídeos-aula da ACEX III que serão publicados no YouTube.
+        </p>
+        <div class="grid">
+          <article class="game-card video-card">
+            <a
+              class="video-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="thumbnail-preview">
+                <span>Vídeo 1</span>
+              </div>
+              <h3>Aula 1 — Introdução</h3>
+            </a>
+            <p>Adicione aqui o link real do YouTube e o título da aula.</p>
+          </article>
+
+          <article class="game-card video-card">
+            <a
+              class="video-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="thumbnail-preview">
+                <span>Vídeo 2</span>
+              </div>
+              <h3>Aula 2 — Desenvolvimento</h3>
+            </a>
+            <p>Adicione aqui o link real do YouTube e o conteúdo da aula.</p>
+          </article>
+
+          <article class="game-card video-card">
+            <a
+              class="video-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="thumbnail-preview">
+                <span>Vídeo 3</span>
+              </div>
+              <h3>Aula 3 — Encerramento</h3>
+            </a>
+            <p>Adicione aqui o link real do YouTube e o resumo da aula.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="acex3-fotos" class="grid-one section sec-bg">
+      <div class="main-content grid-one-content">
+        <h2>ACEX III — Fotos</h2>
+        <p class="grid-description">
+          Registro fotográfico das atividades da ACEX III.
+        </p>
+        <div class="grid gallery-grid">
+          <div class="gallery-img placeholder-gallery">
+            <span>Foto 1 — ACEX III</span>
+          </div>
+          <div class="gallery-img placeholder-gallery">
+            <span>Foto 2 — ACEX III</span>
+          </div>
+          <div class="gallery-img placeholder-gallery">
+            <span>Foto 3 — ACEX III</span>
+          </div>
+          <div class="gallery-img placeholder-gallery">
+            <span>Foto 4 — ACEX III</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer" class="footer">
       <p>
